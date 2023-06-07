@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-section {
+            width: 500px;
+            background-color: #033E3E;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+
+
+        .menu {
+            font-weight: normal;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align:left;
+
+            transition: font-weight 0.3s ease, font-size 0.3s ease;
+        }.menu:hover {
+            font-weight: bold;
+            font-size: 35px}
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .right-section {
+            flex: 1;
+            overflow-y: auto;
+            padding: 50px;
+            background-color: #033E3E;
+            color: #fff;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-section {
+                width: 100%;
+                height: 200px;
+            }
+
+            .right-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div align="left" class="logo"> <h1><br> R Bodavan<h1></div>
+            <div align="left"> <h3>Machine learning Engineer</h3></div><br>
+            <div align="left"><h4> I build accessible, inclusive products and digital experiences for the web.</h4> </div>
+
+            <br><br><br><br><br><br><br>
+
+            <div class="menu">
+                <a href="#about">___ About</a>
+                <a href="#skills">___ Skills</a>
+                <a href="#projects">___ Projects</a>
+                <a href="#contact">___ Contact</a>
+            </div>
+            <br>
+            <div class="social-links">
+                <a href="mailto:example@gmail.com"><img src="gmail.png" alt="Gmail"></a>
+                <a href="https://twitter.com/example"><img src="twitter.png" alt="Twitter"></a>
+                <a href="https://linkedin.com/in/example"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/example"><img src="github.png" alt="GitHub"></a>
+                <a href="https://www.kaggle.com/example"><img src="kaggle.png" alt="Kaggle"></a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="section" id="about">
+                <h2>About</h2>
+                <p>Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.
+
+My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.
+
+When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds
+                    <br><br><br><br><br><br><br><br><br><br>.</p>
+            </div>
+            <div class="section" id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="section" id="projects">
+                <h2>Projects</h2>
+                <div>
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1.</p>
+                </div>
+                <div>
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2.</p>
+                </div>
+            </div>
+            <div class="section" id="contact">
+                <h2>Contact</h2>
+                <p>Contact information goes here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
